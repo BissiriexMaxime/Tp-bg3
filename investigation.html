@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width, initial-scale=1.0">
+<link href="investigation.css" rel="stylesheet">
+<title>Html/CSS</title>
+</head>
+<script src="https://kit.fontawesome.com/30cd7b95f8.js" crossorigin="anonymous" defer></script>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+            <a href="index.html">
+                <img class="bg3-logo
+                " id="backtotop" src="images/bg3 logo.jpeg" alt="Baldur's gate 3 logo" />
+              </a>
+              </div>
+            <h1>Baldur's Gate III</h1>
+            <nav class="link">
+                <ul>
+                    <li><a href="index.html">Main Page</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="game-studio.html">Game Studio</a></li>
+                    <li><a href="investigation.html">Investigation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="menu">
+        <input type="checkbox" id="hamburger">
+                <label id="hamburger-logo" for="hamburger">☰
+                </label>
+                    <nav class="menu-burger">
+                        <a href="index.html">Main Page</a>
+                        <a href="characters.html">Characters</a>
+                        <a href="game-studio.html">Game Studio</a>
+                        <a href="investigation.html">Investigation</a>
+                    </nav>
+    </div>
+    <section>
+        <form class="investigation" method="get" action="">
+            <input type="text" name="surname" id="surname" placeholder="Surname" size="30" maxlength="20">
+            <input type="text" name="first name" id="first name" placeholder="First Name" size="30" maxlength="20">
+            <div class="play-game">
+                <p>Have you ever played the game?</p>
+                <input type="radio" id="yes" name="question-1" value="yes">
+                <label for="yes">YES</label>
+                <input type="radio" id="no" name="question-1" value="no"> 
+                <label for="no">NO</label>
+            </div>
+            <div class="finish-game">
+                <p>If so, have you finished it?</p>
+                <input type="radio" id="yes" name="question-2" value="yes"> 
+                <label for="yes">YES</label>
+                <input type="radio" id="no" name="question-2" value="no"> 
+                <label for="no">NO</label>
+            </div>
+            <div class="class-game"> <!-- This div element represents a dropdown list for selecting a character class in a game. -->
+                <p>What character class did you play, OR what class would you like to play?</p>
+                <select name="class-select" id="class-characters"> 
+                    <option  selected disabled value="">--Class characters--</option>
+                    <option value="barbarians">Barbarian</option>
+                    <option value="clerics">Cleric</option>
+                    <option value="druids">Druid</option>
+                    <option value="paladins">Paladin</option>
+                    <option value="rangers">Ranger</option>
+                    <option value="bard">Bard</option>
+                    <option value="fighter">Fighter</option>
+                    <option value="rogue">Rogue</option>
+                    <option value="sorcerer">Sorcerer</option>
+                    <option value="monk">Monk</option>
+                    <option value="wizard">Wizard</option>
+                    <option value="warlock">Warlock</option><!-- Additional options for character classes... -->
+                </select>
+            </div> 
+            <div class="information"><!-- This div element represents a form with multiple-choice questions for users to provide feedback. -->
+                <p>Do you find the site information relevant?</p>
+                <input type="radio" id="yes" name="question-4" value="yes"> 
+                <label for="yes">YES</label>
+                <input type="radio" id="no" name="question-4" value="no"> 
+                <label for="no">NO</label>
+            </div>
+            <div class="player"><!-- This div element represents a form with multiple-choice questions for users to provide feedback. -->
+                <p>If you didn’t play the game, did it make you want to play it?</p>
+                <input type="radio" id="yes" name="question-5" value="yes">
+                <label for="yes">YES</label>
+                <input type="radio" id="no" name="question-5" value="no">
+                <label for="no">NO</label>
+            </div>
+            <div>
+                <button class="send-form" type="submit">Send Form</button>
+            </div>
+        </form>
+    </section>
+    <div class="end-page">
+        <a id="backtotop" href="#backtotop"> <i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    </body>
+    <footer>
+        <img class="larian-logo" src="images/larian-studio-logo.png">
+        <img class="wizard-logo" src="images/wizard-of-the-coast-logo.png" alt="">
+        <img class="d-d-logo" src="images/Dungeons-and-Dragons-logo.png">
+        <img class="pegi-logo" src="images/PEGI_18_PDGJ.png">
+        <img class="bad-logo" src="images/bad language.png">
+    </footer>
+    
+</html>

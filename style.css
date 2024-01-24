@@ -1,0 +1,237 @@
+@font-face {
+    font-family: "quadraat pro regular";
+    src: url(font/FF\ Quadraat\ Pro\ Regular/);
+}
+img{
+    display: flex;
+    width: 100px;
+    height: 150px;
+    z-index: 0;
+}
+
+body{
+    font-family: "quadraat pro regular";
+    background-image:url("images/bg3\ walpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0px;
+    height: 1200px;
+
+   }
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color:#030D17;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: darkgoldenrod;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+ul li a{
+    color: ghostwhite;
+    font-family: "quadraat pro regular";
+}
+a:hover{
+    color:silver;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    font-size: 20px;
+    font-style:italic;
+  }
+
+  .trailer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+  }
+
+
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download{
+    display: flex;
+    background-color: darkred;
+    border: 4px solid white;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    cursor: pointer;;
+    position: absolute;
+    border-radius: 10px;
+    font-style: italic;
+    left: 45%;
+    bottom: -30%;
+    z-index: 1;
+   
+
+}
+#download{
+    color:black;
+    font-weight: bolder;
+}
+
+.menu {
+  position: fixed;
+  width: 0px;
+  display: none;
+  
+}
+#hamburger {
+  display: none;
+}
+
+#hamburger-logo {
+  cursor: pointer;
+  background: purple;
+  width: 200px;
+  display: block;
+  color: orchid;
+  text-align: right;
+  transform: translateX(-168px);
+  padding: 10px;
+}
+
+.menu-burger{
+  display: flex;
+  flex-direction: column;
+  background-color: orchid
+  
+  
+  ;
+  overflow: hidden;
+  width: 200px;
+  transform: translateX(-200px);
+  
+
+}
+#hamburger:checked ~ #hamburger-logo,
+#hamburger:checked ~ nav {
+  transform: translate(0);
+}
+#hamburger-logo,
+.menu-burger{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.7s; 
+}
+
+
+
+footer{
+  display: flex;
+  justify-content:space-around;
+  align-items: flex-end;
+  margin-top: 910px;
+  background-color: black;
+  z-index: 0;
+
+.larian-logo{
+  width: 60px;
+  height: 90px;
+}
+.wizard-logo{
+  width: 100px;
+  height: 90px;
+}
+.d-d-logo{
+  width: 120px;
+  height: 90px;
+}
+.pegi-logo{
+  width: 60px;
+  height: 70px;
+}
+.bad-logo{
+  width: 130px;
+  height: 60px;
+}
+
+}
+
+.end-page{
+    position:fixed;
+    bottom: 0;
+}
+#backtotop{
+  color: snow;
+  bottom: 0;
+  z-index: 1;
+}
+
+@media screen and (max-width:800px) {
+  .link{
+      display: none;
+  }
+  .menu{
+      display: block;
+  }
+}
+@media screen and (max-width:426px) {
+  .link{
+      display: none;
+  }
+  .menu{
+      display: block;
+      position: relative;
+  }
+  .bg3-logo{
+    height: 100px;
+    width: 70px;
+  }
+
+  h1{
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 35px;
+  
+  }
+  .header{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  body{
+    width: 490px;
+   
+  }
+  .trailer-bg3{
+    width: 90%;
+}
+iframe{
+  padding-top: 30px;
+    height: 150px;
+    margin-left: 50px;
+}
+.image-text{
+  font-size: 15px;
+  padding-bottom: px;
+  margin-left: 50px;
+}
+}

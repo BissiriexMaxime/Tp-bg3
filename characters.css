@@ -1,0 +1,317 @@
+
+@font-face {
+    font-family: "quadraat pro regular";
+    src: url(font/FF\ Quadraat\ Pro\ Regular/);
+}
+img{
+    display: flex;
+    width: 100px;
+    height: 150px;
+    z-index: 0;
+}
+
+body{
+    font-family: "quadraat pro regular";
+    background-image:url("images/bg3-walpaper-characters.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0px;
+
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color:#030D17;
+   
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: darkgoldenrod;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+ul li a{
+    color: ghostwhite;
+    font-family: "quadraat pro regular";
+}
+a:hover{
+    color: darkred;
+}
+
+p1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container{
+    display: grid;
+    z-index: 1;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:15px;
+    font-weight: bold;
+    border-radius: 2px;
+    filter: opacity(80%);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.laezel{
+    display: flex;
+    border: 4px solid darkgreen;
+    align-items: center;
+    font-size: larger;
+    color: black;
+    background-color: darkgreen;
+    grid-column: 2/5;
+
+}
+
+
+
+.shadowheart{
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    font-size: large;
+    background-color: white;
+    justify-content: flex-end ;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+.shadowheart-img{
+    width: 110px;
+    height: 120px;
+}
+
+
+
+.gale{
+    display: flex;
+    border: 1px solid blue;
+    font-size: larger;
+    background-color: blue;
+    grid-column: 2/5;
+    grid-row: 3/4;
+}
+.gale-img{
+    width: 110px;
+    height: 150px;
+}
+
+.astarion{
+    display: flex;
+    border: 1px solid silver;
+    font-size: larger;
+    background-color: silver;
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+.astarion-img{
+    width: 110px;
+    height: 120px;
+}
+
+.wyll{
+    display: flex;
+    border: 1px solid purple;
+    background-color: purple;
+    grid-column: 2/5;
+    grid-row: 5/6;
+}
+.wyll-img{
+    width: 105px;
+}
+.karlach{
+    display: flex;
+    border: 1px solid darkred;
+    background-color: darkred;
+    grid-column: 1/4;
+    grid-row: 6/7;
+}
+.karlach-img{
+    width: 110px;
+    height: 120px;
+}
+
+.halsin{
+    display: flex;
+    border: 1px solid greenyellow;
+    grid-column: 2/5;
+    grid-row: 7/8;
+    background-color: greenyellow;
+}
+.halsin-img{
+    width: 110px;
+    height: 150px;
+}
+
+
+.minthara{
+    display: flex;
+    border: 1px solid black;
+    grid-column: 1/4;
+    grid-row: 8/9;
+    background-color: black;
+    color: white;
+}
+.minthara-img{
+    width: 110px;
+    height: 120px;
+}
+
+.jaheira{
+    display: flex;
+    border: 1px solid green;
+    grid-column: 2/5;
+    grid-row: 9/10;
+    background-color: green;
+}
+.jaheira-img{
+    width: 115px;
+}
+.minsc{
+    display: flex;
+    border: 1px solid darkblue;
+    grid-column: 1/4;
+    grid-row:10/11 ;
+    background-color: darkblue;
+}
+.minsc-img{
+    width: 110px;
+    height: 120px;
+}
+
+
+
+
+.menu {
+    position: relative;
+    width: 0px;
+    display: none;
+    
+  }
+  #hamburger {
+    display: none;
+  }
+  
+  #hamburger-logo {
+    cursor: pointer;
+    background: purple;
+    width: 200px;
+    display: block;
+    color: orchid;
+    text-align: right;
+    transform: translateX(-168px);
+    padding: 10px;
+  }
+  
+  .menu-burger{
+    display: flex;
+    flex-direction: column;
+    background-color: orchid;
+    overflow: hidden;
+    width: 200px;
+    transform: translateX(-200px);
+    
+
+  }
+  #hamburger:checked ~ #hamburger-logo,
+  #hamburger:checked ~ nav {
+    transform: translate(0);
+  }
+  #hamburger-logo,
+  .menu-burger{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.7s; 
+  }
+  
+ 
+  
+
+  footer{
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-end;
+    margin-top: 150px;
+    background-color: black;
+  
+  .larian-logo{
+    width: 60px;
+    height: 90px;
+  }
+  .wizard-logo{
+    width: 100px;
+    height: 90px;
+  }
+  .d-d-logo{
+    width: 120px;
+    height: 90px;
+  }
+  .pegi-logo{
+    width: 60px;
+    height: 70px;
+  }
+  .bad-logo{
+    width: 130px;
+    height: 60px;
+  }
+  
+  }
+
+.end-page{
+    position:fixed;
+    bottom: 0;
+}
+#backtotop{
+    color: snow;
+    bottom: 0;
+}
+@media screen and (max-width:800px) {
+    .link{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+  }
+  @media screen and (max-width:426px) {
+    .link{
+        display: none;
+    }
+    .menu{
+        display: block;
+        position: relative;
+    }
+    #backtotop{
+        height: 120px;
+        width: 70px;
+      }
+      
+      .bg3-logo{
+        height: 100px;
+        width: 70px;
+      }
+    
+      h1{
+        height: 100px;
+        margin-top: 30px;
+        margin-left: 35px;
+      }
+
+      .header{
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+      }
+  }

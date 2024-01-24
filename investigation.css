@@ -1,0 +1,256 @@
+@font-face {
+    font-family: "quadraat pro regular";
+    src: url(font/FF\ Quadraat\ Pro\ Regular/);
+}
+img{
+    display: flex;
+    width: 100px;
+    height: 150px;
+    z-index: 0;
+}
+
+body{
+    font-family: "quadraat pro regular";
+    background-image:url("images/image-investigation.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0px;
+    height:1000px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color:#030D17;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+    color: darkgoldenrod;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+ul li a{
+    color: ghostwhite;
+    font-family: "quadraat pro regular";
+}
+a:hover{
+    color: darkred;
+}
+
+
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  .investigation{
+    color: darkgoldenrod;
+    font-size: large;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+
+      input{
+        margin: 10px;
+        background-color: darkred;
+        color: white;
+        border-radius: 10px;
+      }
+      select{
+        background-color: darkred;
+        color: black;
+        border-radius: 10px;
+        font-size:15px;
+      }
+  }
+  .play-game{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+      p{
+        margin-right: 10px;
+      }
+  }
+  .finish-game{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+      p{
+        margin-right: 10px;
+      }
+  }
+.class-game{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+    p{
+      margin-right: 10px;
+    }
+  }  
+
+.information{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  p{
+    margin-right: 10px;
+  }
+
+}
+.player{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  p{
+    margin-right: 10px;
+  }
+}
+.send-form{
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: darkred;
+  font-size: 15px;
+}
+
+
+.menu {
+  position: relative;
+  width: 0px;
+  display: none;
+  
+}
+#hamburger {
+  display: none;
+}
+
+#hamburger-logo {
+  cursor: pointer;
+  background: purple;
+  width: 200px;
+  display: block;
+  color: orchid;
+  text-align: right;
+  transform: translateX(-168px);
+  padding: 10px;
+}
+
+.menu-burger{
+  display: flex;
+  flex-direction: column;
+  background-color: orchid;
+  overflow: hidden;
+  width: 200px;
+  transform: translateX(-200px);
+  
+
+}
+#hamburger:checked ~ #hamburger-logo,
+#hamburger:checked ~ nav {
+  transform: translate(0);
+}
+#hamburger-logo,
+.menu-burger{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.7s; 
+}
+
+.menu-burger:hover {
+  background-color:darksalmon;
+}
+
+
+@media screen and (max-width:800px) {
+  .link{
+      display: none;
+  }
+  .menu{
+      display: block;
+  }
+}
+@media screen and (max-width:426px) {
+  .link{
+      display: none;
+  }
+  .menu{
+      display: block;
+  }
+  .bg3-logo{
+    height: 100px;
+    width: 70px;
+  }
+
+  h1{
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 35px;
+  
+  }
+  .header{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+  }
+  .investigation{
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+footer{
+  display: flex;
+  justify-content:space-around;
+  align-items: flex-end;
+  margin-top: 190px;
+  background-color: black;
+
+.larian-logo{
+  width: 60px;
+  height: 90px;
+}
+.wizard-logo{
+  width: 100px;
+  height: 90px;
+}
+.d-d-logo{
+  width: 120px;
+  height: 90px;
+}
+.pegi-logo{
+  width: 60px;
+  height: 70px;
+}
+.bad-logo{
+  width: 130px;
+  height: 60px;
+}
+
+}
+
+.end-page{
+    position:fixed;
+    bottom: 0;
+    color: white;
+}
+#backtotop{
+  color: snow;
+  bottom: 0;
+}
